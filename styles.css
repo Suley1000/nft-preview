@@ -85,3 +85,12 @@ hr {
   border-radius: 50%;
   border: 1px solid #fff;
 }
+
+.avatar-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.avatar-text span {
+  color: #fff;
+}
