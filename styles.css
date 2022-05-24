@@ -25,11 +25,36 @@ body {
   padding-bottom: 3.2rem;
   border-radius: 1rem;
 }
-.nft {
+
+.nft-box {
+  display: inline-block;
+  position: relative;
   width: 30.2rem;
   height: 30.2rem;
-  margin-bottom: 2.4rem;
   border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+.nft {
+  width: 100%;
+}
+
+.nft-box::after {
+  content: url(images/icon-view.svg);
+  background-color: hsl(178, 100%, 50%, 0.5);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.nft-box:hover::after {
+  opacity: 1;
+  transition: 0.3s all;
 }
 
 .card-title {
@@ -93,4 +118,9 @@ hr {
 
 .avatar-text span {
   color: #fff;
+}
+
+.avatar-text span:hover,
+.card-title:hover {
+  color: #00fff8;
 }
